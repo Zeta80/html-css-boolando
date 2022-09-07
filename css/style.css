@@ -18,8 +18,11 @@ header {
     height: 60px;
     background-color: orange;
     position: relative;
+    top: 0;
+    left: 0;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 /* UTILITYS */
@@ -52,9 +55,48 @@ a {
     vertical-align: middle;
 }
 
+.column {
+    display: inline-block;
+    width: calc(100% / 3 - 0.2em);
+    position: relative;
+
+    /* DEBUG */
+    background-color: blueviolet;
+    height: 500px;
+}
 
 /* HEADER */
 
 header .container {
     justify-content: space-between;
 }
+
+/* HEADER */
+
+/* #region MAIN */
+main {
+    margin-top: 100px;
+}
+
+.row {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    /* DEBUG */
+    /* height: 100px; */
+    width: 100%;
+    background-color: green;
+}
+
+
+
+
+
+
+/* #endregion MAIN */
