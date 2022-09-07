@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: sans-serif
+}
 
 img {
     max-width: 100%;
@@ -30,12 +33,14 @@ header {
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .container {
     width: 70%;
     max-width: 1050px;
     margin: auto;
-    /* DEBUG */
-    border: 1px solid red;
 }
 
 ul {
@@ -43,6 +48,11 @@ ul {
 }
 
 header li {
+    display: inline;
+    padding-left: 0.3em
+}
+
+footer li {
     display: inline;
     padding-left: 0.3em
 }
@@ -64,9 +74,6 @@ a {
     display: inline-block;
     width: calc(100% / 3 - 0.2em);
     position: relative;
-
-    /* DEBUG */
-    background-color: blueviolet;
     height: 500px;
 }
 
@@ -79,7 +86,7 @@ a {
 }
 
 .tag {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     padding: 0.3em;
     color: white;
     bottom: 80px;
@@ -96,6 +103,15 @@ a {
     background-color: white;
 }
 
+.orig-value {
+    text-decoration-line: line-through;
+}
+
+.price-sale {
+    color: red;
+    font: bold;
+}
+
 /* HEADER */
 
 header .container {
@@ -110,7 +126,6 @@ main {
 }
 
 .row {
-    border: 1px solid black;
     margin-bottom: 40px;
 }
 
@@ -119,6 +134,10 @@ main {
     left: 0;
     background-color: white;
     width: 100%;
+}
+
+.price span {
+    font-size: 0.9rem;
 }
 
 .images {
@@ -135,6 +154,7 @@ main {
     left: 50px;
 }
 
+
 /* HOVER */
 .column:hover .front {
     display: none;
@@ -145,3 +165,26 @@ main {
 }
 
 /* #endregion MAIN */
+
+/* #region FOOTER */
+footer {
+    color: white;
+    background-color: #1a1a1a;
+    min-height: 100px;
+}
+
+footer .container {
+    padding-top: 20px;
+}
+
+.info li {
+    padding: 0;
+}
+
+.info h4 {
+    padding-bottom: 0.5em;
+}
+
+.info a {
+    font-size: 0.7rem;
+}
