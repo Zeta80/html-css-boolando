@@ -32,6 +32,7 @@ header {
 
 .container {
     width: 70%;
+    max-width: 1050px;
     margin: auto;
     /* DEBUG */
     border: 1px solid red;
@@ -51,6 +52,10 @@ a {
     color: white;
 }
 
+.prefer a {
+    color: black;
+}
+
 .vert-align {
     vertical-align: middle;
 }
@@ -63,6 +68,32 @@ a {
     /* DEBUG */
     background-color: blueviolet;
     height: 500px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.tag {
+    font-size: 1.1rem;
+    padding: 0.3em;
+    color: white;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.prefer {
+    color: aqua;
+    font-size: 2.5rem;
+    right: 0;
+    padding: 0 10px;
+    top: 20px;
+    z-index: 1;
+    background-color: white;
 }
 
 /* HEADER */
@@ -83,19 +114,28 @@ main {
     margin-bottom: 20px;
 }
 
+
+
 .price {
-    position: absolute;
     bottom: 0;
     left: 0;
-
-    /* DEBUG */
-    /* height: 100px; */
+    background-color: white;
     width: 100%;
-    background-color: green;
 }
 
+.images {
+    bottom: 0;
+    left: 0;
+}
 
+.sale {
+    background-color: red;
+}
 
+.sostenibility {
+    background-color: green;
+    left: 50px;
+}
 
 
 
